@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fi">
 <head>
 	<meta charset="UTF-8">
 	<title>PREMIUM CLASSIC - Parhaimmat klassikkoautot</title>
@@ -15,20 +15,6 @@
 <body>
 <!-- Header -->
 <div class="allcontain">
-	<div class="header">
-			<ul class="socialicon">
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-			</ul>
-			<ul class="givusacall">
-				<li>Soita meille: 025351725 </li>
-			</ul>
-			<ul class="logreg">
-				<li><a href="#">Kirjaudu </a> </li>
-				<li><a href="#"><span class="register">Rekisteröidy</span></a></li>
-			</ul>
-	</div>
 	<!-- Navbar Up -->
 	<nav class="topnavbar navbar-default topnav">
 		<div class="container">
@@ -45,24 +31,10 @@
 		<div class="collapse navbar-collapse" id="upmenu">
 			<ul class="nav navbar-nav" id="navbarontop">
 				<li class="active"><a href="#">ETUSIVU</a> </li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AUTOLUOKAT <span class="caret"></span></a>
-					<ul class="dropdown-menu dropdowncostume">
-						<li><a href="#">Luksus</a></li>
-						<li><a href="#">Urheiluautot</a></li>
-						<li><a href="#">Kilpa-autot</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LIKKEET <span class="caret"></span></a>
-						<ul class="dropdown-menu dropdowncostume">
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="3">3</a></li>
-						</ul>
-				</li>
+				<li class="active"><a href="#suositut">SUOSITUIMMAT</a> </li>
+				<li class="active"><a href="#uudet">UUSIMMAT</a> </li>
 				<li>
-					<a href="#">YHTEYSTIEDOT</a>
+					<a href="#yhteyst">YHTEYSTIEDOT</a>
  
 				</li>
 				<button><span class="postnewcar">MYY AUTOSI</span></button>
@@ -154,7 +126,7 @@
 <!-- ____________________Featured Section ______________________________--> 
 <div class="allcontain">
 	<div class="feturedsection">
-		<h1 class="text-center"><span class="bdots">&bullet;</span>S U O S  I T U  I  M M A T<span class="carstxt">A U T O T</span>&bullet;</h1>
+		<h1 class="text-center" id="suositut"><span class="bdots">&bullet;</span>S U O S  I T U  I  M M A T<span class="carstxt">A U T O T</span>&bullet;</h1>
 	</div>
 	<div class="feturedimage">
 		<div class="row firstrow">
@@ -211,7 +183,7 @@
 	</div>
 <!-- ________________________LATEST CARS SECTION _______________________-->
 <div class="latestcars">
-	<h1 class="text-center">&bullet; UUSIMMAT VALIKOIMASSA &bullet;</h1>
+	<h1 class="text-center" id="uudet">&bullet; UUSIMMAT VALIKOIMASSA &bullet;</h1>
 	<ul class="nav nav-tabs navbar-left latest-navleft">
 		<li role="presentation" class="li-sortby"><span class="sortby">JÄRJESTELE:  </span></li>
 		<li data-filter=".RECENT" role="presentation"><a href="#mostrecent" class="prcBtnR"> TUOREIMMAT </a></li>
@@ -239,7 +211,7 @@
 							</div>
 							<div class="simpletxt">
 								<h3 class="name">Porsche 356</h3>
-								<p>""<br>
+								<p>Porschen ensimmäinen automalli.<br>
 	 							</p>
 	 							<h4 class="price">90 000 &euro;</h4>
 	 							<button>LUE LISÄÄ</button><br>
@@ -267,7 +239,7 @@
 							</div>
 							<div class="simpletxt">
 								<h3 class="name">Porsche 911 Cabrio</h3>
-								<p>""<br>
+								<p>Suosittu 930-tyypin avo-Porsche.<br>
 	 							</p>
 	 							<h4 class="price">30 000 &euro;</h4>
 	 							<button>LUE LISÄÄ</button><br>
@@ -360,12 +332,9 @@
 		<div class="bottomlogo">
 		<span class="dotlogo">&bullet;</span><img src="image/logouusi.png" style="height:100px" alt="logo1"><span class="dotlogo">&bullet;;</span>
 		</div>
-		<ul class="nav nav-tabs bottomlinks">
-			<li role="presentation" ><a href="#/" role="button">Tietoa meistä</a></li>
-			<li role="presentation"><a href="#/">Autoluokat</a></li>
-			<li role="presentation"><a href="#/">Esittelyt</a></li>
-			<li role="presentation"><a href="#/">Yhteystiedot</a></li>
-		</ul>
+		<div class="yhteystiedot">
+			<h1 id="yhteyst">YHTEYSTIEDOT</h1>
+		</div>
 		<p>"Vain klassikkoautot voivat tuottaa todellisen ajamisen ilon."<br>
 		-Eligio Gabrielli</p>
 		 <img src="image/line.png" alt="line"> <br>
