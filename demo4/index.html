@@ -15,20 +15,6 @@
 <body>
 <!-- Header -->
 <div class="allcontain">
-	<div class="header">
-			<ul class="socialicon">
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-			</ul>
-			<ul class="givusacall">
-				<li>Soita meille: 025 3517259 </li>
-			</ul>
-			<ul class="logreg">
-				<li><a href="#">Kirjaudu </a> </li>
-				<li><a href="#"><span class="register">Rekisteröidy</span></a></li>
-			</ul>
-	</div>
 	<!-- Navbar Up -->
 	<nav class="topnavbar navbar-default topnav">
 		<div class="container">
@@ -39,30 +25,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand logo" href="#"><img src="image/logouusi.png" style="height:50px" alt="logo"></a>
+				<a class="navbar-brand logo" href="#"><img src="image/logouusi.png" style="height:50px"alt="logo"></a>
 			</div>	 
 		</div>
 		<div class="collapse navbar-collapse" id="upmenu">
 			<ul class="nav navbar-nav" id="navbarontop">
 				<li class="active"><a href="#">ETUSIVU</a> </li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AUTOLUOKAT <span class="caret"></span></a>
-					<ul class="dropdown-menu dropdowncostume">
-						<li><a href="#">Luksus</a></li>
-						<li><a href="#">Urheiluautot</a></li>
-						<li><a href="#">Kilpa-autot</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LIKKEET <span class="caret"></span></a>
-						<ul class="dropdown-menu dropdowncostume">
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="3">3</a></li>
-						</ul>
-				</li>
+				<li class="active"><a href="#suositut">SUOSITUIMMAT</a> </li>
+				<li class="active"><a href="#uudet">UUSIMMAT</a> </li>
 				<li>
-					<a href="#">YHTEYSTIEDOT</a>
+					<a href="#yhteyst">YHTEYSTIEDOT</a>
  
 				</li>
 				<button><span class="postnewcar">MYY AUTOSI</span></button>
@@ -102,7 +74,7 @@
 		<nav class="navbar navbar-default midle-nav">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse" data-target="#navbarmidle" aria-expanded="false">
-						Hae autoja
+						<h1>Hae autoja</h1>
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -120,14 +92,14 @@
 				</form>
 				<ul class="nav navbar-nav navbarborder">
 					<li class="li-category">
-						<a href="" class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Autoluokka<span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+						<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Autoluokka<span class="glyphicon glyphicon-chevron-down downicon"></span></a>
 						<ul class="dropdown-menu" id="mydd">
 							<li><a href="#">Luksus</a></li>
 							<li><a href="#">Urheiluautot</a></li>
 							<li><a href="#">Kilpa-autot</a></li>
 						</ul>
 					</li>
-					<li href="" class="li-minyear"><a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Vuosi <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+					<li class="li-minyear"><a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Vuosi <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
 						<ul class="dropdown-menu" id="mydd2">
 							<li><a href="#">-1950</a></li>
 							<li><a href="#">1950-1960</a></li>
@@ -136,7 +108,7 @@
 							<li><a href="#">1980-</a></li>
 						</ul>
 					</li>
-					<li href="" class="li-maxyear"><a class="btn dropdown-toggle btn-costume"  id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Teho <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+					<li class="li-maxyear"><a class="btn dropdown-toggle btn-costume"  id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Teho <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
 						<ul class="dropdown-menu" id="mydd3">
 							<li><a href="#">-100</a></li>
 							<li><a href="#">100-200</a></li>
@@ -154,7 +126,7 @@
 <!-- ____________________Featured Section ______________________________--> 
 <div class="allcontain">
 	<div class="feturedsection">
-		<h1 class="text-center"><span class="bdots">&bullet;</span>S U O S  I T U  I  M M A T<span class="carstxt">A U T O T</span>&bullet;</h1>
+		<h1 class="text-center" id="suositut"><span class="bdots">&bullet;</span>S U O S  I T U  I  M M A T<span class="carstxt">A U T O T</span>&bullet;</h1>
 	</div>
 	<div class="feturedimage">
 		<div class="row firstrow">
@@ -211,7 +183,7 @@
 	</div>
 <!-- ________________________LATEST CARS SECTION _______________________-->
 <div class="latestcars">
-	<h1 class="text-center">&bullet; UUSIMMAT VALIKOIMASSA &bullet;</h1>
+	<h1 class="text-center" id="uudet">&bullet; UUSIMMAT VALIKOIMASSA &bullet;</h1>
 	<ul class="nav nav-tabs navbar-left latest-navleft">
 		<li role="presentation" class="li-sortby"><span class="sortby">JÄRJESTELE:  </span></li>
 		<li data-filter=".RECENT" role="presentation"><a href="#mostrecent" class="prcBtnR"> TUOREIMMAT </a></li>
@@ -239,13 +211,10 @@
 							</div>
 							<div class="simpletxt">
 								<h3 class="name">Porsche 356</h3>
-								<p>""<br>
-	 							</p>
 	 							<h4 class="price">90 000 &euro;</h4>
-	 							<button>LUE LISÄÄ</button><br>
+	 							<button>Porschen ensimmäinen automalli. Se on erittäin kevyt ja ketterä, ja oli suuressa suosiossa sen valmistuksen aikana.</button><br>
 	 							<div class="wishtxt">
-		 							<p class="paragraph1"> Seuraa <span class="glyphicon glyphicon-heart"></span> </p>
-		 							<p class="paragraph2">Vertaile <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 							<br>
 		 						</div>
 							</div>
 							<div class="stars2">
@@ -266,14 +235,11 @@
 								<div class="glyphicon glyphicon-star"></div>
 							</div>
 							<div class="simpletxt">
-								<h3 class="name">Porsche 911 Cabrio</h3>
-								<p>""<br>
-	 							</p>
+								<h3 class="name">Porsche 911 Turbo Cabrio</h3>
 	 							<h4 class="price">30 000 &euro;</h4>
-	 							<button>LUE LISÄÄ</button><br>
+	 							<button>Suosittu 930-tyypin avo-Porsche. Se on yksi ensimmäisiä turboahdettuja urheiluautoja. Tehokas B6-moottori puskee sen ennätysvauhteihin.</button><br>
 	 							<div class="wishtxt">
-		 							<p class="paragraph1"> Seuraa <span class="glyphicon glyphicon-heart"></span> </p>
-		 							<p class="paragraph2">Vertaile <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 							<br>
 		 						</div>
 							</div>
 							<div class="stars2">
@@ -295,13 +261,10 @@
 							</div>
 							<div class="simpletxt">
 								<h3 class="name">Jaguar E-Type</h3>
-								<p>""<br>
-	 							</p>
 	 							<h4 class="price">50 000 &euro;</h4>
-	 							<button>LUE LISÄÄ</button><br>
+	 							<button>Jaguarin menestynein urheiluauto. Se on usein äänestetty maailman kauneimmaksi autoksi. Sen V12-moottori pohjautuu XJ13-kilpurin moottoriin.</button><br>
 	 							<div class="wishtxt">
-		 							<p class="paragraph1"> Seuraa <span class="glyphicon glyphicon-heart"></span> </p>
-		 							<p class="paragraph2">Vertaile <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 							<br>
 		 						</div>
 							</div>
 							<div class="stars2">
@@ -323,13 +286,10 @@
 							</div>
 							<div class="simpletxt">
 								<h3 class="name">Mercedes 300SEL</h3>
-								<p>""<br>
-	 							</p>
 	 							<h4 class="price">40 000 &euro;</h4>
-	 							<button>LUE LISÄÄ</button><br>
+	 							<button>Mercedesin nopeusennätyksiä rikkova edustussedan. Siinä on sen ajan tehokkain moottori, mitä Mercedesillä oli saatavilla.</button><br>
 	 							<div class="wishtxt">
-		 							<p class="paragraph1"> Seuraa <span class="glyphicon glyphicon-heart"></span> </p>
-		 							<p class="paragraph2">Vertaile <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+									 <br>
 		 						</div>
 							</div>
 							<div class="stars2">
@@ -360,12 +320,16 @@
 		<div class="bottomlogo">
 		<span class="dotlogo">&bullet;</span><img src="image/logouusi.png" style="height:100px" alt="logo1"><span class="dotlogo">&bullet;;</span>
 		</div>
-		<ul class="nav nav-tabs bottomlinks">
-			<li role="presentation" ><a href="#/" role="button">Tietoa meistä</a></li>
-			<li role="presentation"><a href="#/">Autoluokat</a></li>
-			<li role="presentation"><a href="#/">Esittelyt</a></li>
-			<li role="presentation"><a href="#/">Yhteystiedot</a></li>
-		</ul>
+		<div class="yhteystiedot">
+			<h1 id="yhteyst" class="text-center">YHTEYSTIEDOT</h1>
+			<p class="text-center">
+				info@premiumclassic.fi<br>
+				puh. 034 1223491<br>
+				Viikintie 23<br>
+				00560 Helsinki
+				
+			</p>
+		</div>
 		<p>"Vain klassikkoautot voivat tuottaa todellisen ajamisen ilon."<br>
 		-Eligio Gabrielli</p>
 		 <img src="image/line.png" alt="line"> <br>
@@ -383,10 +347,10 @@
 	</div>
 </div>
 
-<script src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
-<script src="source/js/isotope.js"></script>
-<script src="source/js/myscript.js"></script> 
-<script src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
-<script src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+<script type="text/javascript" src="source/js/isotope.js"></script>
+<script type="text/javascript" src="source/js/myscript.js"></script> 
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 </body>
 </html>
