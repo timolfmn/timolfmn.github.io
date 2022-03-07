@@ -34,7 +34,7 @@ h1,h2,h4 {
     text-align:center;
     text-transform:uppercase;
     /* font-size:30px; */
-    font-family: 'Lobster', cursive;
+    font-family: 'Helvetica', bold;
 }
 .pad-set {
     padding-top:50px;
