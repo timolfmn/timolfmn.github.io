@@ -3,6 +3,7 @@ const lista = []
 
 //lisää juomat listaan ja ottaa lisäysnapin pois näkyvistä
 function valinta1() {
+    //lukee checkboxit
     const check1=document.getElementById('colatolkki')
     const check2=document.getElementById('colapienipullo')
     const check3=document.getElementById('colaisopullo')
@@ -19,6 +20,7 @@ function valinta1() {
     document.getElementById("vahvistus1").style.display = "block";
 }
 function valinta2() {
+    //lukee checkboxit
     const check1=document.getElementById('fantatolkki')
     const check2=document.getElementById('fantapienipullo')
     const check3=document.getElementById('fantaisopullo')
@@ -35,6 +37,7 @@ function valinta2() {
     document.getElementById("vahvistus2").style.display = "block";
 }
 function valinta4() {
+    //lukee checkboxit
     const check1=document.getElementById('spritetolkki')
     const check2=document.getElementById('spritepienipullo')
     const check3=document.getElementById('spriteisopullo')
@@ -51,6 +54,7 @@ function valinta4() {
     document.getElementById("vahvistus3").style.display = "block";
 }
 function valinta5() {
+    //lukee checkboxit
     const check2=document.getElementById('vesipienipullo')
     const check3=document.getElementById('vesiisopullo')
     if (check2.checked===true){
@@ -84,4 +88,5 @@ function vahvistus(){
     document.getElementById("juomalista").textContent += lista.join(', ');
     localStorage.setItem('juomat', lista.join(', '));
     document.getElementById("vahvista").style.display="none";
+    document.getElementById("seuraava").style.display="block";
 }

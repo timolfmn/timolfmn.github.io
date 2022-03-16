@@ -52,4 +52,5 @@ function vahvistus(){
     document.getElementById("taytelista").textContent += lista.join(', ');
     localStorage.setItem('omapizza', lista.join(', '));
     document.getElementById("vahvista").style.display="none";
+    document.getElementById("seuraava").style.display="block";
 }
