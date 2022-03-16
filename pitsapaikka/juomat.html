@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luo oma pizza</title>
+    <title>Valitse juomat</title>
     <script src="kirjautuminen.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="omapizza2.js"></script>
+    <script src="juomatilaus.js"></script>
 </head>
 <body>
     <header>
@@ -27,35 +27,42 @@
 </form>
 </header>
 
-<!--pizzan luonti-->
+<!--juomien lisäys-->
+<h1>Juomat</h1>
 
-<h1>Luo oma pizza</h1>
-
-<form id="taytteet">
-    <h3>Juusto</h3>
+<form id="juomat">
+    <h3>Coca-Cola</h3>
+    <input id="colatolkki" type="checkbox">0.33L tölkki<br>
+    <input id="colapienipullo" type="checkbox">0.5L pullo<br>
+    <input id="colaisopullo" type="checkbox">1.5L pullo<br>
     <input id="lisaa" type="button" value="Lisää" onClick="valinta1()">
     <p id="vahvistus1" style="display: none">Lisätty</p>
-    <h3>Pepperoni</h3>
+    <h3>Fanta</h3>    
+    <input id="fantatolkki" type="checkbox">0.33L tölkki<br>
+    <input id="fantapienipullo" type="checkbox">0.5L pullo<br>
+    <input id="fantaisopullo" type="checkbox">1.5L pullo<br>
     <input id="lisaa2" type="button" value="Lisää" onClick="valinta2()">
     <p id="vahvistus2" style="display: none">Lisätty</p>
-    <h3>Kinkku</h3>
+    <h3>Sprite</h3>
+    <input id="spritetolkki" type="checkbox">0.33L tölkki<br>
+    <input id="spritepienipullo" type="checkbox">0.5L pullo<br>
+    <input id="spriteisopullo" type="checkbox">1.5L pullo<br>
     <input id="lisaa3" type="button" value="Lisää" onClick="valinta4()">
     <p id="vahvistus3" style="display: none">Lisätty</p>
-    <h3>Kana</h3>
+    <h3>Kivennäisvesi</h3>
+    <input id="vesipienipullo" type="checkbox">0.5L pullo<br>
+    <input id="vesiisopullo" type="checkbox">1.5L pullo<br>
     <input id="lisaa4" type="button" value="Lisää" onClick="valinta5()">
     <p id="vahvistus4" style="display: none">Lisätty</p>
-    <h3>Ananas</h3>
-    <input id="lisaa5" type="button" value="Lisää" onClick="valinta6()">
-    <p id="vahvistus5" style="display: none">Lisätty</p>
 </form>
 
 <!--vahvistus-->
 <p></p>
 <input id="poistakaikki" type="button" value="Poista valinnat" onClick="poistaKaikki()"><br>
 <input id="vahvista" type="button" value="Vahvista valinnat" onClick="vahvistus()">
-<p id="taytelista">Sinun pizzasi: </p>
+<p id="juomalista">Juomavalintasi: </p>
 
-<a href="juomat.html">
+<a href="kassa.html">
 <p>Seuraava sivu</p>
 </a>
 </body>
