@@ -1,0 +1,16 @@
+p {
+    font-size:20px;
+}
+p.hinta {
+    color:red;
+    font-size:17px;
+    margin-top:5px;
+}
+p.nimi {
+    font-size:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+h1.pitseria {
+    color:green;
+}

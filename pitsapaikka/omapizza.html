@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo oma pizza</title>
+    <script src="kirjautuminen.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="omapizza2.js"></script>
+</head>
+<body>
+    <header>
+<!--logo ja kirjautumislomake-->
+<a href="index.html">
+<img src="kuvat/lataa.png">
+</a>
+<h1 class="pitseria">Keravan pitseria</h1>
+<p id="tervetulo_teksti">Tervetuloa </p>
+<form id="kirjautumis_lomake">
+    <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
+    <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
+    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+</form>
+<form id="ulosKirjautuminen">
+    <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
+</form>
+</header>
+
+<!--pizzan luonti-->
+
+<h1>Luo oma pizza</h1>
+
+<form id="taytteet">
+    <h3>Juusto</h3>
+    <input id="lisaa" type="button" value="Lisää" onClick="valinta1()">
+    <p id="vahvistus1" style="display: none">Lisätty</p>
+    <h3>Pepperoni</h3>
+    <input id="lisaa2" type="button" value="Lisää" onClick="valinta2()">
+    <p id="vahvistus2" style="display: none">Lisätty</p>
+    <h3>Kinkku</h3>
+    <input id="lisaa3" type="button" value="Lisää" onClick="valinta4()">
+    <p id="vahvistus3" style="display: none">Lisätty</p>
+    <h3>Ananas</h3>
+    <input id="lisaa4" type="button" value="Lisää" onClick="valinta5()">
+    <p id="vahvistus4" style="display: none">Lisätty</p>
+</form>
+
+<!--vahvistus-->
+<p></p>
+<input id="poistakaikki" type="button" value="Poista valinnat" onClick="poistaKaikki()"><br>
+<input id="vahvista" type="button" value="Vahvista valinnat" onClick="vahvistus()">
+<p id="taytelista">Sinun pizzasi: </p>
+
+<a href="juomat.html">
+<p>Seuraava sivu</p>
+</a>
+</body>
